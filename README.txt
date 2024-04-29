@@ -1,50 +1,50 @@
-# E1RM-Rechner
+# E1RM Calculator
 
-Der E1RM-Rechner ist ein einfaches Python-Programm, das es ermöglicht, das geschätzte One-Repetition Maximum (E1RM) für verschiedene Übungen im Kraftsport zu berechnen. Zusätzlich bietet das Programm eine Vergleichsfunktion, um zu sehen, wie deine Leistung im Vergleich zu anderen Sportlern steht.
+The E1RM Calculator is a simple Python program that allows you to calculate the estimated one-repetition maximum (E1RM) for various exercises in weight training. In addition, the program offers a comparison function to see how your performance compares to other athletes.
 
 ## Installation
 
-1. Stelle sicher, dass Python auf deinem Computer installiert ist. Wenn nicht, kannst du es von der offiziellen [Python-Website](https://www.python.org/downloads/) herunterladen und installieren.
+1. make sure that Python is installed on your computer. If not, you can download and install it from the official [Python website](https://www.python.org/downloads/). 2.
 
-2. Lade den Code für dieses Projekt herunter und entpacke ihn, wenn er komprimiert ist.
+2. download the code for this project and unzip it if it is compressed
 
-3. Öffne die Befehlszeile (Terminal) auf deinem Computer.
+3. open the command line (terminal) on your computer
 
-4. Navigiere zum Verzeichnis, in dem sich der heruntergeladene Code befindet.
+4. navigate to the directory where the downloaded code is located.
 
-5. Erstelle eine virtuelle Python-Umgebung (optional, aber empfohlen):
+5. create a virtual Python environment (optional, but recommended):
    ```bash
    python -m venv myenv
 
-Aktiviere die virtuelle Umgebung:
+Activate the virtual environment:
 
-Unter Windows: myenv\Scripts\activate
+On Windows: myenv\Scripts\activate
 
-Unter macOS und Linux: source myenv/bin/activate
+On macOS and Linux: source myenv/bin/activate
 
-Installiere die erforderlichen Abhängigkeiten (Bibliotheken und Pakete): pip install -r requirements.txt
-
-
-Verwendung
-
-Führe das Programm aus, indem du den folgenden Befehl in der Befehlszeile eingibst: python main.py
-
-Das Programm startet und öffnet eine grafische Benutzeroberfläche (GUI). (Dies kann bis zu 10 Sekunden dauern)
-
-Wähle dein Geschlecht, die Art der Übung, die Anzahl der Wiederholungen, die wahrgenommene Anstrengung (RPE), das Gewicht, dein Alter und deine Gewichtsklasse aus.
-
-Klicke auf die Schaltfläche "Berechnen", um den geschätzten E1RM-Wert und Vergleichsinformationen anzuzeigen.
-
-Schließe das GUI-Fenster, wenn du fertig bist.
+Install the required dependencies (libraries and packages): pip install -r requirements.txt
 
 
-Dieses Projekt verwendet Python und verschiedene Python-Bibliotheken, um die Berechnungen durchzuführen und die Benutzeroberfläche bereitzustellen. 
-Du musst sicherstellen, dass Python installiert ist und die Abhängigkeiten installiert sind, wie in der Installationsanleitung beschrieben.
+How to use
 
-Die Daten für den Vergleich stammen aus einer externen Datenquelle und sind im Code festgelegt.
+Run the program by entering the following command in the command line: python main.py
+
+The program starts and opens a graphical user interface (GUI). (This can take up to 10 seconds)
+
+Select your gender, the type of exercise, the number of repetitions, the perceived exertion (RPE), the weight, your age and your weight class.
+
+Click on the "Calculate" button to display the estimated E1RM value and comparison information.
+
+Close the GUI window when you are done.
 
 
-Autor
+This project uses Python and various Python libraries to perform the calculations and provide the user interface. 
+You need to make sure that Python is installed and the dependencies are installed as described in the installation guide.
+
+The data for the comparison comes from an external data source and is defined in the code.
+
+
+Author
 Luca Kursawe
 
 
