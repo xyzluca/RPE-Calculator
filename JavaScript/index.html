@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E1RM Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form id="e1rmForm">
+    <label for="reps">Reps:</label>
+    <input type="number" id="reps" name="reps" min="1" required>
+    
+    <label for="rpe">RPE:</label>
+    <input type="number" id="rpe" name="rpe" min="6" max="10" step="0.5" required>
+    
+    <label for="weightKg">Weight (kg):</label>
+    <input type="number" id="weightKg" name="weightKg" min="0" required>
+    
+    <button type="submit">Calculate E1RM</button>
+</form>
+
+<div id ="result"></div> // Ergebnis anzeigen
+
+<script>
+    // JavaScript code for handling form submission
+    document.getElementById('e1rmForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        // Get form values
+        const reps = parseFloat(document.getElementById('reps').value);
+        const rpe = parseFloat(document.getElementById('rpe').value);
+        const weightKg = parseFloat(document.getElementById('weightKg').value);
+
+        // referenz zu result <div> element
+        const resultDiv = document.getELementbyId('result');
+        
+        // Display the result
+        if (e1rm !== null) {
+            // Display the calculated E1RM value in the result <div>
+            resultDiv.textContent = 'Estimated 1 Rep Max (E1RM): ' + e1rm.toFixed(2) + ' kg';
+        } else {
+            // Display an error message if the input is invalid
+            resultDiv.textContent = 'Invalid input! Please check your values.';
+        }
+});
+</script>
+</body>
+</html>
